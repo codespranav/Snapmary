@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
-
+import HeroSection from "@/components/home/hero-section";
+import BgGradient from "@/components/common/bg-gradient";
 export default function Home() {
   return (
-    <>
-    <h1>Hello</h1>
-    <Button>Button</Button>
-    </>
+    <div className="relative w-full">
+      <BgGradient />
+      <div className="flex flex-col">
+         <HeroSection />
+      </div>
+      {/* <DemoSection />
+      <PricingSection />
+      <CTASection /> */}
+    </div>
   );
 }
